@@ -1,0 +1,7 @@
+.vscode
+**/data/
+**/config.*
+
+**/*.ai
+**/*.pdf
+**/*.psd
