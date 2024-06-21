@@ -93,6 +93,7 @@
             </div>
           </nav>
     </header>
+    <section style="height:300vh"></section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -101,6 +102,25 @@
     crossorigin="anonymous"></script>
 
     <!-- ajax 실행식 넣기 -->
+
+    <script>
+
+        //section태그에 bg-white라는 클래스를 적용해
+        $("section").attr("class", "bg-white");   
+        // 복사 기능
+        //$("section").html($('h1').html());
+        $("section").html($(".bg-dark").html());
+     
+
+
+        $("body").attr("data-any", "아무거나");
+
+        $(window).on('scroll', () => {
+            // 스크롤 할 때마다 실행
+            $("body").attr("data-position", $(window).scrollTop());
+            //.scrollLeft()도 있다.
+        });
+    </script>
 
 </body>
 </html>
